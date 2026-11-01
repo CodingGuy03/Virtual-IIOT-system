@@ -40,9 +40,9 @@ streamlit run app.py
 Access the dashboard at **`http://localhost:8501`**.
 
 ### 3. Run the Unified Jupyter Notebook
-Open and run **`final_code.ipynb`** in Jupyter Lab, Jupyter Notebook, or VS Code:
+Open and run **`eda.ipynb`** in Jupyter Lab, Jupyter Notebook, or VS Code:
 ```bash
-jupyter lab final_code.ipynb
+jupyter lab eda.ipynb
 ```
 
 ### 4. Regenerate Figures & Static HTML Report
@@ -87,10 +87,8 @@ The dashboard features a live telemetry streaming engine:
 ├── data_pipeline.py                         # Core analytics, KPI calculator & simulation generator
 ├── generate_visualizations.py               # Standalone script to export PNGs and HTML report
 ├── run_dashboard.bat                        # Windows one-click batch launcher
-├── final_code.ipynb                         # Unified Jupyter Notebook (Tasks 3, 4, 5 consolidated)
-├── CNC_Dashboard_and_Visualization_Report.docx # 1-Page executive DOCX summary report
+├── eda.ipynb                                # Unified Jupyter Notebook (modules 3, 4, 5 consolidated)
 ├── initial data.csv                         # Raw 10,000-row CNC telemetry dataset
-├── CNC_Task4_Complete_Data.csv              # Processed dataset with merged machine KPIs
 ├── requirements.txt                         # Python dependencies
 ├── .gitignore                               # Git ignore configuration
 └── visualizations/                          # Pre-rendered high-res figures & interactive HTML report
