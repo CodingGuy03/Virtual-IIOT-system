@@ -13,9 +13,9 @@ An end-to-end industrial IoT telemetry analysis, degradation modeling, multi-sen
 ## 📌 Project Overview
 
 This repository provides a complete diagnostic suite covering 10,000 telemetry observations across 5 CNC units over 7 days (5-minute sampling interval). It integrates:
-- **Task 3: Preprocessing & Dimensionality Reduction**: Grouped IQR outlier filtering by operational state, degradation health evaluation (Monotonicity, Trendability, Robustness), Standardization, and PCA retaining 95% variance.
-- **Task 4: Fleet Operational Benchmarking**: Comprehensive KPI formulation (Utilization %, Running Hours, Production Rate, Rejection Rate %, Downtime Hours, and Operational Variability CV %).
-- **Task 5: Multi-Sensor Anomaly & Alarm System**: Consensus ensemble voting (Rule-based $\mu+2\sigma$, Z-Score $>2$, Moving Average deviation $>2\sigma$) paired with a 3-sample persistence filter.
+- **Module 3: Preprocessing & Dimensionality Reduction**: Grouped IQR outlier filtering by operational state, degradation health evaluation (Monotonicity, Trendability, Robustness), Standardization, and PCA retaining 95% variance.
+- **Module 4: Fleet Operational Benchmarking**: Comprehensive KPI formulation (Utilization %, Running Hours, Production Rate, Rejection Rate %, Downtime Hours, and Operational Variability CV %).
+- **Module 5: Multi-Sensor Anomaly & Alarm System**: Consensus ensemble voting (Rule-based $\mu+2\sigma$, Z-Score $>2$, Moving Average deviation $>2\sigma$) paired with a 3-sample persistence filter.
 - **Interactive Python Dashboard (`app.py`)**: Built with Streamlit and Plotly covering all 8 deliverables with rich interactivity.
 - **Real-Time Dynamic Sensor Simulation**: Streaming telemetry generator executing online consensus anomaly detection with interactive fault injection.
 
@@ -53,7 +53,7 @@ Open **`visualizations/dashboard_report.html`** in any web browser for an offlin
 
 ---
 
-## 📊 Core Visualization Deliverables
+##  Core Visualization Deliverables
 
 All high-resolution visualization charts are generated and stored in the [`visualizations/`](visualizations/) directory:
 
@@ -70,17 +70,17 @@ All high-resolution visualization charts are generated and stored in the [`visua
 
 ---
 
-## 🔄 Live Dynamic Sensor Simulation
+##  Live Dynamic Sensor Simulation
 
 The dashboard features a live telemetry streaming engine:
 - **Dynamic Auto-Refresh**: Uses `@st.fragment` to update gauges and charts every 1–10 seconds without full page reload.
 - **Physical Gauges**: Plotly radial dials for **Temperature**, **Vibration**, **Motor Current**, and **Spindle RPM** with color-coded safety zones.
-- **Fault Injection**: An **"🚨 Inject Fault / Anomaly Spike"** button to simulate physical bearing failure and watch the alarm system trigger live.
+- **Fault Injection**: An **"Inject Fault / Anomaly Spike"** button to simulate physical bearing failure and watch the alarm system trigger live.
 - **Rolling Strip Chart & Event Feed**: 50-sample moving strip chart with vertical alarm shading and tabular telemetry log.
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 ├── app.py                                   # Main Streamlit web dashboard application
