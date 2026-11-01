@@ -120,5 +120,3 @@ The dashboard features a live telemetry streaming engine:
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License.
